@@ -9,6 +9,6 @@
 </style>
 
 <div style="display: flex; flex-direction: row; justify-content: center; align-items: center">
-    <h1 style="margin-right: 20px;">Hermes</h1>
-    <img src="imgs/logo.svg" alt="Logo" width="50px">
+    <h1 style="margin-right: 20px;">Hermes <img src="imgs/logo.svg" alt="Logo" width="50px"></h1>
+    
 </div>
