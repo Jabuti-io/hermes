@@ -1,3 +1,3 @@
 ## :ledger: Hermes
 
-![Hermes Image](imgs/banner.png)
+![Hermes Image](imgs/light-logo.png)
