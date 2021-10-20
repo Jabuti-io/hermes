@@ -7,11 +7,16 @@ name = "pypi"
 fastapi = "*"
 uvicorn = {extras = ["standard"], version = "*"}
 sqlalchemy = "*"
+psycopg2 = "*"
+fastapi-sqlalchemy = "*"
+alembic = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
 [scripts]
 serve = "python server.py"
+migrate = "alembic revision --autogenerate -m"
 
 [requires]
 python_version = "3.8"
