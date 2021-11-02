@@ -1,10 +1,13 @@
+import importlib
+import os
 from logging.config import fileConfig
 
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 
 from alembic import context
-from src.config.database import DATABASE_URI, BASE
+from src.config.database import DATABASE_URI
+import src.api.models as models
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
@@ -22,7 +25,9 @@ fileConfig(config.config_file_name)
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
-target_metadata = BASE.metadata
+metadata_models = models.BASE.metadata
+
+target_metadata = metadata_models
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:

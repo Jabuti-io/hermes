@@ -16,7 +16,8 @@ python-dotenv = "*"
 
 [scripts]
 serve = "python server.py"
-migrate = "alembic revision --autogenerate -m"
+makemigration = "alembic revision --autogenerate -m"
+migrate = "alembic upgrade head"
 
 [requires]
 python_version = "3.8"
